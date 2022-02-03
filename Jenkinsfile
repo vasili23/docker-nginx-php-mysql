@@ -4,6 +4,8 @@ pipeline {
     stage('build') {
       steps {
         build 'build'
+        sh 'sudo docker compose up'
+        
       }
     }
 
